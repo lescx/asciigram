@@ -1,0 +1,42 @@
+:root {
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --font-family: monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+    --background-color: #000000;
+  }
+}
+
+html, body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: var(--text-color);
+}
+
+.menu-links {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu-links li {
+  list-style: none;
+  margin: 0 10px;
+}
