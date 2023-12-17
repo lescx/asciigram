@@ -1,7 +1,7 @@
 :root {
   --background-primary:  #FCFCFC; /* background color */
-  --text-primary:        #171717; /* default text */
-  --text-secondary:      #3D3D3D; /* highlighting, important, heading, links, special stuff */
+  --text-primary:        #171717; /* highlighting, important, heading, links, special stuff */
+  --text-secondary:      #3D3D3D; /* default text */
   --text-tertiary:       #5C5C5C; /* one element that differs from the rest - e.g. one link item in a menu */
   --accent-yellow:       #F6AE2D; /* link hover, button hover, etc */
   --accent-orange:       #F26419; /* RSS icon only for now */
@@ -20,11 +20,9 @@ body {
   background-color: var(--background-primary);
 }
 
-header{height:3em;}
-
 h1, h2, h3, h4, h5, h6, hr, a, a:visited {color: var(--text-primary);}
-
 a:hover, a:active {color: var(--text-tertiary);}
+code {color: var(--background-primary); background-color: var(--text-primary);}
 
 .menu {
   float: right;
