@@ -1,0 +1,8 @@
+<feed xmlns="https://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
+  <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  <!-- <link rel="self" href="{{ .Permalink }}"/> -->
+  <author>
+    <name>{{ with .Site.Author.name }}{{ . }}{{ end }}</name>
+    <email>{{ with .Site.Author.email }}{{ . }}{{ end }}</name>
+  </author>
+</feed>

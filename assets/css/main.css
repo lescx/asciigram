@@ -37,12 +37,13 @@ a:hover, a:active, .menu a:hover, .menu a:focus {
   color: var(--text-tertiary);
 }
 
-/* Assuming your main content area has a class of .content */
-.content {
-  flex: 1 0 auto; /* This allows the content area to grow and shrink as needed */
+/* This is needed to allow the footer to stay at the bottom of the page,
+   even if the content isn't tall enough to the fill the whole screen */
+main {
+  flex: 1 0 auto;
 }
 
-.footer {
+footer {
   flex-shrink: 0;
   float: right;
   list-style: none;
@@ -50,12 +51,12 @@ a:hover, a:active, .menu a:hover, .menu a:focus {
   margin-bottom: 1em;
 }
 
-.footer li {
+footer li {
   display: inline; /* places menu items side by side */
   float: right; /* right-aligns the menu items */
 }
 
-.footer a {
+footer a {
   color: var(--text-primary);
   padding: 10px;
 }

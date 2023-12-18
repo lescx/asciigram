@@ -2,18 +2,9 @@ name = 'Theme name'
 license = 'BSD-3-Clause'
 licenselink = 'https://github.com/lescx/asciigram/blob/main/LICENSE'
 description = 'ASCII art inspired Hugo theme originally made for www.les.cx'
-
-# The home page of the theme, where the source can be found
 homepage = 'https://github.com/lescx/asciigram'
-
-# If you have a running demo of the theme
 demosite = 'https://www.les.cx'
 
-# Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
-
-# If the theme has a single author
 [author]
   name = 'Luca Etienne Schulz'
   homepage = 'https://www.les.cx'

@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ .Content }}
+
+  {{ $newestArticle := first 1 (where .Site.RegularPages "Section" "articles") }}
+  {{ with index $newestArticle 0 }}
+    <article>
+      <p>Newest article: <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    </article>
+  {{ end }}
+
+{{ end }}
