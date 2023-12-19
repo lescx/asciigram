@@ -12,4 +12,8 @@
   <title>{{ block "title" . }}{{- partial "title.html" . -}}{{ end }}</title>
   {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+
+  {{ with .OutputFormats.Get "atom" }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s"/>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end }}
 </head>
