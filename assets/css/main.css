@@ -32,7 +32,7 @@ img {
   width: 100%;
 }
 
-code {
+pre, code {
   overflow-x: scroll;
 }
 
