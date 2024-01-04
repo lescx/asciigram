@@ -32,6 +32,10 @@ img {
   width: 100%;
 }
 
+code {
+  overflow-x: scroll;
+}
+
 h1, h2, h3, h4, h5, h6, a, a:visited {color: var(--text-primary);}
 a:hover, a:active, .menu a:hover, .menu a:focus {
   color: var(--text-tertiary);
